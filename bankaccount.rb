@@ -1,0 +1,2 @@
+#Design a class BankAccount with attributes account_number, balance, and methods to transfer money to another account. 
+#Implement methods to add accounts, deposit money, withdraw money, and check balances.

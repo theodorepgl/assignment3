@@ -1,0 +1,1 @@
+#Build a class WeatherForecast that generates a random weather forecast for the day.

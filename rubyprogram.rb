@@ -1,0 +1,1 @@
+# Write a Ruby program that takes a sentence as input and outputs the number of words in it.
