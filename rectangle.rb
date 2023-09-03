@@ -1,5 +1,6 @@
 #Implement a class Rectangle with attributes width and height. 
 #Add methods to calculate the area and perimeter.
+require 'colorize'
 
 class Rectangle
   attr_accessor :width, :height
@@ -18,6 +19,6 @@ class Rectangle
   end
 end
 
-rect = Rectangle.new(5, 10)
-puts "Area: #{rect.area}" # Output: Area: 50
-puts "Perimeter: #{rect.perimeter}" # Output: Perimeter: 30
+rect = Rectangle.new(50, 100)
+puts "Area: #{rect.area}".light_yellow
+puts "Perimeter: #{rect.perimeter}".light_red
