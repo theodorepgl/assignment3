@@ -12,11 +12,11 @@ class Person
 
   def compare_age(other_person)
     if age > other_person.age
-      "#{name} is older than #{other_person.name}.".light_green
+      "#{name} is older than #{other_person.name}.".light_red
     elsif age < other_person.age
-      "#{name} is younger than #{other_person.name}.".light_green
+      "#{name} is younger than #{other_person.name}.".light_red
     else
-      "#{name} and #{other_person.name} are of the same age.".light_green
+      "#{name} and #{other_person.name} are of the same age.".light_white
     end
   end
 end
@@ -28,10 +28,10 @@ person3 = Person.new("Haaland", 24)
 person4 = Person.new("Foden", 24)
 
 
-puts "#{person1.name} is #{person1.age}.".light_blue
+puts "#{person1.name} is #{person1.age}.".light_magenta
 puts "#{person2.name} is #{person2.age}.".light_blue
-puts "#{person3.name} is #{person3.age}.".light_blue
-puts "#{person4.name} is #{person4.age}.".light_blue
+puts "#{person3.name} is #{person3.age}.".light_cyan
+puts "#{person4.name} is #{person4.age}.".light_yellow
 puts
 puts person1.compare_age(person2)
 puts person2.compare_age(person1)
