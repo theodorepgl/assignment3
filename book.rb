@@ -13,13 +13,11 @@ class Book
   
   def display_book
     puts "Title: #{@title}".light_blue
-    puts "Author: #{@author}".light_cyan
-    puts "Pages: #{@pages}".light_magenta
+    puts "Author: #{@author}".light_red
+    puts "Pages: #{@pages}".light_yellow
   end
 end
 
-#Book class
 book_type = Book.new("Rich Dad Poor Dad", "Robert Kiyosaki and Sharon L. Lechter", 336)
 
-#Display
 book_type.display_book
