@@ -12,7 +12,7 @@ class Student
   def average_grade
     total_grades = @grades.reduce(0, :+)
     average = total_grades.to_f / @grades.length
-    average.round(2) # rounding to 2 decimal places
+    average.round(2)
   end
 end
 
