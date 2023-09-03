@@ -1,16 +1,17 @@
 # Create a class Time with attributes hours and minutes. 
 # Add a method to add two Time objects together.
+require 'colorize'
 
 class Time
   attr_accessor :hours, :minutes
   
-  def initialize(hours, minutes)
-    @hours = hours
-    @minutes = minutes
+  def initialize(hours=0, minutes=0)
+    @hours = rand(1..24)
+    @minutes = rand(1..60)
   end
   
-  def +(other_time)
-    total_minutes = (@hours * 60 + @minutes) + (other_time.hours * 60 + other_time.minutes)
+  def +(times)
+    total_minutes = (@hours * 60 + @minutes) + (times.hours * 60 + times.minutes)
     new_hours = total_minutes / 60
     new_minutes = total_minutes % 60
     
@@ -18,9 +19,8 @@ class Time
   end
 end
 
-# Example usage:
-time1 = Time.new(2, 30)
-time2 = Time.new(1, 45)
+time1 = Time.new()
+time2 = Time.new()
 
 sum = time1 + time2
-puts "Sum: #{sum.hours} hours, #{sum.minutes} minutes"
+puts "Sum: #{sum.hours} hours, #{sum.minutes} minutes".light_red
