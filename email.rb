@@ -11,7 +11,7 @@ class Email
   end
 
   def contains_offensive_words
-    offensive_words = ['offensive_word1', 'offensive_word2', 'offensive_word3'] # Add more offensive words as needed
+    offensive_words = ['TLN', 'CCB', 'DNS']
 
     offensive_words.each do |word|
       return true if @content.downcase.include?(word.downcase)
@@ -20,3 +20,15 @@ class Email
     false
   end
 end
+
+email1 = Email.new("a@a.com", "b@b.com", "Hello CCB")
+email1.contains_offensive_words
+
+offensive_words = ['TLN', 'CCB', 'DNS']
+
+content = "Hello saya CCB"
+
+puts email1.sender
+puts email1.receiver
+puts email1.content
+puts email1.contains_offensive_words
