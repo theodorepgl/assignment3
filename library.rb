@@ -38,12 +38,11 @@ class Book
   end
 end
 
-# Example usage:
 library = Library.new
 
 book1 = Book.new("Harry Potter and the Sorcerer's Stone")
-book2 = Book.new("To Kill a Mockingbird")
-book3 = Book.new("1984")
+book2 = Book.new("Rich Dad Poor Dad")
+book3 = Book.new("Anwar Ibrahim")
 
 library.add_book(book1)
 library.add_book(book2)
