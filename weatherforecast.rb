@@ -8,12 +8,11 @@ class WeatherForecast
 
   def generate_forecast
     random_condition = @weather_conditions.sample
-    temperature = rand(28..40) #random temperature
+    temperature = rand(28..40)
 
-    "Today's Kudat city weather forecast: #{random_condition.capitalize}, #{temperature}°C".light_yellow
+    "Today's Kudat city weather forecast: #{random_condition}, #{temperature}°C".light_yellow
   end
 end
 
-# Example usage:
 forecast = WeatherForecast.new
 puts forecast.generate_forecast
