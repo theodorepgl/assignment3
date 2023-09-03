@@ -16,6 +16,5 @@ class Product
   end
 end
 
-# Example usage:
-product = Product.new("Dunhill King", 13.99, 5)
-puts "Total price: #{product.name} is $#{product.total_price}".red
+product = Product.new("Dunhill King", 17.50, 5)
+puts "Total price: #{product.quantity} boxes of #{product.name} is $#{product.total_price}".red
